@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Company Name - Your Slogan Here</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7fafc; /* Light gray background */
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Style for active navigation link */
+        .nav-link.active {
+            border-bottom: 2px solid #3b82f6; /* Blue border for active link */
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Sticky Navigation Bar -->
+    <nav class="bg-white shadow-lg fixed top-0 w-full z-50">
+        <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <!-- Company Logo/Name -->
+            <a href="#hero" class="text-2xl font-bold text-gray-900 hover:text-blue-600 transition-colors duration-300">
+                Your Company Name
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">About Us</a>
+                <a href="#services" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Services</a>
+                <a href="#team" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Team</a>
+                <a href="#contact" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Contact</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 hover:text-blue-600 focus:outline-none">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-inner pb-4">
+            <a href="#about" class="block py-2 px-6 text-gray-700 hover:bg-gray-100 transition-colors duration-300">About Us</a>
+            <a href="#services" class="block py-2 px-6 text-gray-700 hover:bg-gray-100 transition-colors duration-300">Services</a>
+            <a href="#team" class="block py-2 px-6 text-gray-700 hover:bg-gray-100 transition-colors duration-300">Team</a>
+            <a href="#contact" class="block py-2 px-6 text-gray-700 hover:bg-gray-100 transition-colors duration-300">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero" class="bg-blue-600 text-white min-h-screen flex items-center justify-center pt-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">Your Company's Bold Slogan Here</h1>
+            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+                A brief, compelling description of what your company does and why it matters.
+            </p>
+            <a href="#contact" class="bg-white text-blue-600 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-200 transition-all duration-300 transform hover:scale-105">
+                Get Started Today
+            </a>
+        </div>
+    </header>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">About Our Company</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+                <div class="md:w-1/2">
+                    <!-- Placeholder image URL -->
+                    <img src="https://placehold.co/600x400/1e40af/ffffff?text=Company+Image" alt="About Us" class="rounded-lg shadow-xl w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Services</h2>
+            <p class="text-gray-600 mb-12 max-w-2xl mx-auto">
+                We offer a wide range of solutions to help your business succeed.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <i class="fas fa-chart-line text-blue-600 text-4xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Service Title 1</h3>
+                    <p class="text-gray-600">
+                        A short and concise description of the service. Highlight the key benefits for the customer.
+                    </p>
+                </div>
+                <!-- Service Card 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <i class="fas fa-users text-blue-600 text-4xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Service Title 2</h3>
+                    <p class="text-gray-600">
+                        A short and concise description of the service. Highlight the key benefits for the customer.
+                    </p>
+                </div>
+                <!-- Service Card 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <i class="fas fa-laptop-code text-blue-600 text-4xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Service Title 3</h3>
+                    <p class="text-gray-600">
+                        A short and concise description of the service. Highlight the key benefits for the customer.
+                    </p>
+                </div>
+                <!-- Service Card 4 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <i class="fas fa-shield-alt text-blue-600 text-4xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Service Title 4</h3>
+                    <p class="text-gray-600">
+                        A short and concise description of the service. Highlight the key benefits for the customer.
+                    </p>
+                </div>
+                <!-- Service Card 5 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <i class="fas fa-palette text-blue-600 text-4xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Service Title 5</h3>
+                    <p class="text-gray-600">
+                        A short and concise description of the service. Highlight the key benefits for the customer.
+                    </p>
+                </div>
+                <!-- Service Card 6 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <i class="fas fa-bullhorn text-blue-600 text-4xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Service Title 6</h3>
+                    <p class="text-gray-600">
+                        A short and concise description of the service. Highlight the key benefits for the customer.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Meet Our Team</h2>
+            <p class="text-gray-600 mb-12 max-w-2xl mx-auto">
+                Passionate professionals dedicated to your success.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Team Member Card 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <!-- Placeholder image URL -->
+                    <img src="https://placehold.co/200x200/4f46e5/ffffff?text=Jane" alt="Team Member 1" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-semibold">Jane Doe</h3>
+                    <p class="text-blue-600">CEO</p>
+                    <p class="text-gray-600 mt-2">A brief bio about the team member.</p>
+                </div>
+                <!-- Team Member Card 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <!-- Placeholder image URL -->
+                    <img src="https://placehold.co/200x200/4f46e5/ffffff?text=John" alt="Team Member 2" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-semibold">John Smith</h3>
+                    <p class="text-blue-600">CTO</p>
+                    <p class="text-gray-600 mt-2">A brief bio about the team member.</p>
+                </div>
+                <!-- Team Member Card 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <!-- Placeholder image URL -->
+                    <img src="https://placehold.co/200x200/4f46e5/ffffff?text=Alice" alt="Team Member 3" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-semibold">Alice Johnson</h3>
+                    <p class="text-blue-600">Lead Designer</p>
+                    <p class="text-gray-600 mt-2">A brief bio about the team member.</p>
+                </div>
+                <!-- Team Member Card 4 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <!-- Placeholder image URL -->
+                    <img src="https://placehold.co/200x200/4f46e5/ffffff?text=Mark" alt="Team Member 4" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-semibold">Mark Williams</h3>
+                    <p class="text-blue-600">Marketing Lead</p>
+                    <p class="text-gray-600 mt-2">A brief bio about the team member.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="py-20 bg-blue-600 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Transform Your Business?</h2>
+            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+                Join thousands of satisfied customers and let's build something amazing together.
+            </p>
+            <a href="#contact" class="bg-white text-blue-600 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-200 transition-all duration-300 transform hover:scale-105">
+                Contact Us Now
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center">Get in Touch</h2>
+            <p class="text-gray-600 mb-12 text-center max-w-2xl mx-auto">
+                We'd love to hear from you. Fill out the form below or use our contact details to reach us.
+            </p>
+            <div class="flex flex-col lg:flex-row items-start gap-12">
+                <!-- Contact Form -->
+                <div class="lg:w-1/2 w-full bg-white p-8 rounded-xl shadow-lg">
+                    <form id="contact-form">
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="subject" class="block text-gray-700 font-medium mb-2">Subject</label>
+                            <input type="text" id="subject" name="subject" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                            <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-blue-700 transition-colors duration-300">
+                            Send Message
+                        </button>
+                    </form>
+                    <div id="form-message" class="mt-4 hidden p-4 rounded-lg text-white font-medium text-center"></div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="lg:w-1/2 w-full bg-white p-8 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-semibold mb-4">Contact Information</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-blue-600 mr-4 text-xl"></i>
+                            <p class="text-gray-600">123 Business Rd, Suite 456, City, State 12345</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-blue-600 mr-4 text-xl"></i>
+                            <p class="text-gray-600">(123) 456-7890</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-blue-600 mr-4 text-xl"></i>
+                            <p class="text-gray-600">info@yourcompany.com</p>
+                        </div>
+                    </div>
+                    <!-- Social Media Links -->
+                    <div class="mt-8">
+                        <h3 class="text-xl font-semibold mb-4">Follow Us</h3>
+                        <div class="flex space-x-6">
+                            <a href="#" class="text-blue-600 hover:text-blue-800 transition-colors duration-300">
+                                <i class="fab fa-twitter text-3xl"></i>
+                            </a>
+                            <a href="#" class="text-blue-600 hover:text-blue-800 transition-colors duration-300">
+                                <i class="fab fa-linkedin-in text-3xl"></i>
+                            </a>
+                            <a href="#" class="text-blue-600 hover:text-blue-800 transition-colors duration-300">
+                                <i class="fab fa-facebook-f text-3xl"></i>
+                            </a>
+                            <a href="#" class="text-blue-600 hover:text-blue-800 transition-colors duration-300">
+                                <i class="fab fa-instagram text-3xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
+                <p>&copy; 2024 Your Company Name. All Rights Reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu and Smooth Scrolling -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const navLinks = document.querySelectorAll('.nav-link');
+            const mobileNavLinks = mobileMenu.querySelectorAll('a');
+            const contactForm = document.getElementById('contact-form');
+            const formMessage = document.getElementById('form-message');
+
+            // Toggle mobile menu visibility
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Smooth scroll for desktop and mobile links
+            const allNavLinks = [...navLinks, ...mobileNavLinks];
+            allNavLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    // Close mobile menu on link click
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                    // Handle active link state and smooth scroll
+                    const targetId = e.target.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+
+                    if (targetElement) {
+                        e.preventDefault();
+                        window.scrollTo({
+                            top: targetElement.offsetTop - document.querySelector('nav').offsetHeight,
+                            behavior: 'smooth'
+                        });
+
+                        // Update active link state
+                        allNavLinks.forEach(l => l.classList.remove('active'));
+                        e.target.classList.add('active');
+                    }
+                });
+            });
+
+            // Update active link on scroll
+            window.addEventListener('scroll', () => {
+                let currentSection = '';
+                const sections = document.querySelectorAll('section');
+                const navHeight = document.querySelector('nav').offsetHeight;
+
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop - navHeight;
+                    const sectionHeight = section.clientHeight;
+                    if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+                        currentSection = section.id;
+                    }
+                });
+
+                allNavLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href').substring(1) === currentSection) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+
+            // Simple form submission simulation
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                // Clear previous message
+                formMessage.classList.add('hidden');
+                formMessage.classList.remove('bg-green-500', 'bg-red-500');
+                
+                // Show a success message
+                formMessage.textContent = 'Thank you for your message! We will get back to you shortly.';
+                formMessage.classList.remove('hidden');
+                formMessage.classList.add('bg-green-500');
+
+                // Clear the form
+                contactForm.reset();
+            });
+        });
+    </script>
+
+</body>
+</html>
